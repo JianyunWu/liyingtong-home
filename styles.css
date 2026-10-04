@@ -99,7 +99,11 @@ section { scroll-margin-top: 86px; }
 .brand-light .brand-text strong { color: var(--white); }
 .brand-light .brand-text em { color: #8DA0B3; }
 
-.site-nav { display: flex; align-items: center; }
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .site-nav > a {
   position: relative;
   margin-left: 28px;
@@ -119,10 +123,16 @@ section { scroll-margin-top: 86px; }
   background: var(--blue-600);
 }
 
+/* 语言切换：固定在页面右上角，始终可见 */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 24px;
+}
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  margin-left: 28px;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 3px;
@@ -313,6 +323,16 @@ section { scroll-margin-top: 86px; }
   border-radius: 999px;
   padding: 5px 12px;
 }
+.case-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--blue-600);
+  transition: color .15s ease;
+}
+.case-more:hover { color: #1660B4; text-decoration: underline; }
 
 /* ---------------- Product ---------------- */
 .product {
@@ -505,7 +525,7 @@ section { scroll-margin-top: 86px; }
     font-size: 16px;
   }
   .site-nav > a.active::after { display: none; }
-  .lang-switch { margin: 16px 0 0; align-self: flex-start; }
+  /* 语言切换保留在顶栏右上角，与汉堡按钮并排 */
 
   .hero-inner { padding-top: 72px; padding-bottom: 72px; }
   .hero h1 { font-size: 32px; }
@@ -524,4 +544,5 @@ section { scroll-margin-top: 86px; }
   .section-head h2 { font-size: 26px; }
   .btn { width: 100%; text-align: center; }
   .hero-cta { flex-direction: column; }
+  .lang-btn { padding: 5px 10px; }
 }
