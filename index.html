@@ -1,26 +1,297 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>利盈通 — Coming Soon</title>
-<style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans SC',sans-serif;background:#fafafa;color:#1a1a2e;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-  .card{background:#fff;border:1px solid #e4e4eb;border-radius:16px;padding:48px;text-align:center;max-width:480px;box-shadow:0 4px 24px rgba(0,0,0,.04)}
-  h1{font-size:2rem;font-weight:700;margin-bottom:12px;color:#0066cc}
-  p{color:#6b6b7a;margin-bottom:24px;font-size:1.1rem}
-  .btn{display:inline-block;padding:14px 32px;background:#0066cc;color:#fff;font-weight:600;border-radius:8px;text-decoration:none;transition:background .15s}
-  .btn:hover{background:#0052a3;color:#fff}
-  .footer{margin-top:32px;font-size:.85rem;color:#999}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="利盈通 LIYINGTONG — 石油行业业务与技术咨询服务" data-en="LiyingTong — Business & Technology Consulting for the Oil & Gas Industry">利盈通 LIYINGTONG — 石油行业业务与技术咨询服务</title>
+<meta name="description" data-zh="利盈通 — 上海合平信息咨询有限公司旗下品牌：高端石油行业业务与技术咨询服务、ERP 实施与数据治理、油田设备可靠性与运营绩效平台。" data-en="LiyingTong, a brand of Shanghai Heping Information Consulting Co., Ltd. — business and technology consulting for the oil & gas industry, ERP implementation and data governance, and the Equipment Reliability & Operation Performance Platform.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <h1>利盈通</h1>
-    <p>官网建设中，敬请期待</p>
-    <a class="btn" href="https://demo.liyingtong.com" target="_blank" rel="noopener">进入演示平台 →</a>
-    <p class="footer">© 2025 利盈通 · 油田设备可靠性与产能优化</p>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="LiyingTong">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#0A2036"/>
+        <path d="M16 6 L9 26 M16 6 L23 26 M11.2 19 L20.8 19 M9.8 23 L22.2 23 M16 6 L16 26" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="16" cy="14.4" r="1.8" fill="#2E82D8"/>
+      </svg>
+      <span class="brand-text">
+        <strong data-zh="利盈通" data-en="LiyingTong">利盈通</strong>
+        <em>LIYINGTONG</em>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main">
+      <a href="#home" data-zh="首页" data-en="Home">首页</a>
+      <a href="#cases" data-zh="我们的案例" data-en="Our Cases">我们的案例</a>
+      <a href="#product" data-zh="产品介绍" data-en="Product">产品介绍</a>
+      <a href="#contact" data-zh="联系我们" data-en="Contact">联系我们</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="zh">中文</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</header>
+
+<main>
+  <!-- ======================= Hero ======================= -->
+  <section class="hero" id="home">
+    <svg class="hero-pattern" viewBox="0 0 900 620" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#22456A" stroke-width="1">
+        <path d="M900 40 C 760 60 640 140 620 260 C 600 380 680 480 820 510 L 900 520"/>
+        <path d="M900 90 C 780 110 690 180 672 270 C 654 370 720 452 830 478 L 900 486"/>
+        <path d="M900 140 C 806 156 736 210 722 278 C 706 362 756 424 842 446 L 900 452"/>
+        <path d="M900 190 C 832 202 782 240 772 286 C 760 352 794 396 854 414 L 900 418"/>
+        <path d="M900 240 C 858 248 828 270 822 294 C 814 342 832 368 866 382 L 900 386"/>
+      </g>
+      <g fill="#2E5B84">
+        <circle cx="672" cy="270" r="4"/>
+        <circle cx="760" cy="180" r="3"/>
+        <circle cx="700" cy="420" r="3"/>
+        <circle cx="836" cy="330" r="3.5"/>
+        <circle cx="586" cy="330" r="2.5"/>
+      </g>
+      <path d="M672 270 C 740 320 800 350 880 366" fill="none" stroke="#2E5B84" stroke-width="1.2" stroke-dasharray="5 5"/>
+    </svg>
+
+    <div class="container hero-inner">
+      <p class="hero-eyebrow" data-zh="上海合平信息咨询有限公司" data-en="Shanghai Heping Information Consulting Co., Ltd.">上海合平信息咨询有限公司</p>
+      <h1 data-zh="深耕石油行业的<br>业务与技术咨询服务" data-en="Business &amp; technology consulting,<br>built for the oil &amp; gas industry">深耕石油行业的<br>业务与技术咨询服务</h1>
+      <p class="hero-sub" data-zh="我们服务国际油田运营场景，提供管理咨询、ERP 实施与数据治理，以及自研数字化平台，帮助油气企业把运营数据转化为可靠的生产力。" data-en="We serve international oilfield operations with management consulting, ERP implementation and data governance, and our own digital platform — helping oil &amp; gas companies turn operating data into reliable productivity.">我们服务国际油田运营场景，提供管理咨询、ERP 实施与数据治理，以及自研数字化平台，帮助油气企业把运营数据转化为可靠的生产力。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#cases" data-zh="了解我们的案例" data-en="Explore our cases">了解我们的案例</a>
+        <a class="btn btn-ghost" href="https://demo.liyingtong.com" target="_blank" rel="noopener" data-zh="访问产品演示" data-en="View product demo">访问产品演示</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Capabilities ======================= -->
+  <section class="caps band-soft">
+    <div class="container caps-grid">
+      <div class="cap-item">
+        <div class="cap-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+        </div>
+        <h3 data-zh="业务与管理咨询" data-en="Business & management consulting">业务与管理咨询</h3>
+        <p data-zh="石油行业业务流程梳理、运营优化与管理体系咨询，扎根国际油田运营现场。" data-en="Business process review, operational improvement and management consulting, rooted in international oilfield operations.">石油行业业务流程梳理、运营优化与管理体系咨询，扎根国际油田运营现场。</p>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+        </div>
+        <h3 data-zh="ERP 实施与数据治理" data-en="ERP implementation & data governance">ERP 实施与数据治理</h3>
+        <p data-zh="SAP / Maximo 实施咨询、主数据治理与系统集成，打通工单、物资与财务数据链路。" data-en="SAP / Maximo implementation consulting, master data governance and systems integration across work orders, materials and finance.">SAP / Maximo 实施咨询、主数据治理与系统集成，打通工单、物资与财务数据链路。</p>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+        </div>
+        <h3 data-zh="数字化产品平台" data-en="Digital products">数字化产品平台</h3>
+        <p data-zh="自研「利盈通」油田设备可靠性与运营绩效平台，让油田数据持续创造价值。" data-en="Our own LiyingTong equipment reliability and operation performance platform, turning oilfield data into lasting value.">自研「利盈通」油田设备可靠性与运营绩效平台，让油田数据持续创造价值。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Cases ======================= -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">OUR CASES</p>
+        <h2 data-zh="我们的案例" data-en="Our Cases">我们的案例</h2>
+        <p class="section-sub" data-zh="来自真实国际油田与国家石油公司的项目经验，覆盖 ERP 实施、系统集成与数据治理。" data-en="Project experience from international oilfields and national oil companies, covering ERP implementation, systems integration and data governance.">来自真实国际油田与国家石油公司的项目经验，覆盖 ERP 实施、系统集成与数据治理。</p>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-head">
+            <span class="case-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-zh="阿尔及利亚 · Sonatrach" data-en="Algeria · Sonatrach">阿尔及利亚 · Sonatrach</span>
+            </span>
+            <span class="case-type" data-zh="ERP 咨询与实施" data-en="ERP consulting & implementation">ERP 咨询与实施</span>
+          </div>
+          <h3 data-zh="Sonatrach 石油公司 SAP 项目" data-en="Sonatrach — SAP Program">Sonatrach 石油公司 SAP 项目</h3>
+          <p class="case-desc" data-zh="为阿尔及利亚国家石油公司提供 SAP 咨询与实施服务：围绕设备维护与物资管理核心业务，完成业务流程设计、主数据治理与系统集成，支撑客户实现维护与供应链业务的数字化转型。" data-en="SAP consulting and implementation for Algeria's national oil company: business process design, master data governance and systems integration around maintenance and supply chain operations, supporting the client's digital transformation.">为阿尔及利亚国家石油公司提供 SAP 咨询与实施服务：围绕设备维护与物资管理核心业务，完成业务流程设计、主数据治理与系统集成，支撑客户实现维护与供应链业务的数字化转型。</p>
+          <ul class="case-chips">
+            <li>SAP PM</li>
+            <li>SAP MM</li>
+            <li data-zh="主数据治理" data-en="Master data governance">主数据治理</li>
+            <li data-zh="系统集成" data-en="Systems integration">系统集成</li>
+          </ul>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head">
+            <span class="case-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-zh="伊拉克 · 西古尔纳1期" data-en="Iraq · West Qurna-1">伊拉克 · 西古尔纳1期</span>
+            </span>
+            <span class="case-type" data-zh="IT 技术服务" data-en="IT technical services">IT 技术服务</span>
+          </div>
+          <h3 data-zh="西古尔纳1期油田 ITSP 项目" data-en="West Qurna-1 Oilfield — ITSP Project">西古尔纳1期油田 ITSP 项目</h3>
+          <p class="case-desc" data-zh="为西古尔纳1期油田提供 IT 技术服务：打通设备维护管理系统与 SAP ERP 之间的数据链路，建设工单与物资数据治理及运营报表分析能力，支撑超大型油田日常生产的数字化运营。" data-en="IT technical services for the West Qurna-1 oilfield: integrating the maintenance management system with SAP ERP, building work-order and materials data governance, and operational reporting to support daily production operations at one of the world's largest oilfields.">为西古尔纳1期油田提供 IT 技术服务：打通设备维护管理系统与 SAP ERP 之间的数据链路，建设工单与物资数据治理及运营报表分析能力，支撑超大型油田日常生产的数字化运营。</p>
+          <ul class="case-chips">
+            <li data-zh="Maximo 集成" data-en="Maximo integration">Maximo 集成</li>
+            <li>SAP ERP</li>
+            <li data-zh="数据治理" data-en="Data governance">数据治理</li>
+            <li data-zh="运营报表" data-en="Operational reporting">运营报表</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Product ======================= -->
+  <section class="product" id="product">
+    <div class="container product-grid">
+      <div class="product-copy">
+        <p class="eyebrow light">PRODUCT · <span data-zh="产品介绍" data-en="Product">产品介绍</span></p>
+        <h2 data-zh="利盈通：油田设备可靠性与<br>运营绩效平台" data-en="LiyingTong: Equipment Reliability &amp;<br>Operation Performance Platform">利盈通：油田设备可靠性与<br>运营绩效平台</h2>
+        <p class="product-desc" data-zh="基于油田地图的多维分析平台：将产量指标分解至设备 Train，量化设备故障对产量的影响，预判检修计划对生产安排的冲击，让整座油田的运营态势一屏可见。" data-en="A map-based, multi-dimensional analytics platform: production KPIs decomposed to equipment trains, quantified failure impact on output, and foresight on how maintenance planning affects production — the whole field at a glance.">基于油田地图的多维分析平台：将产量指标分解至设备 Train，量化设备故障对产量的影响，预判检修计划对生产安排的冲击，让整座油田的运营态势一屏可见。</p>
+        <ul class="product-feats">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-zh="产量指标分解至设备 Train，故障影响量化" data-en="Production KPIs down to train level, with quantified failure impact">产量指标分解至设备 Train，故障影响量化</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-zh="检修计划对生产影响的事前预判" data-en="Foresight on how maintenance planning affects production">检修计划对生产影响的事前预判</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-zh="四大分析图层：设备 · BOM · IoT · 当日工单" data-en="Four analysis layers: equipment, BOM, IoT and daily work orders">四大分析图层：设备 · BOM · IoT · 当日工单</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-zh="地图化展示，一屏总览全油田态势" data-en="Map-based view of the whole field at a glance">地图化展示，一屏总览全油田态势</span>
+          </li>
+        </ul>
+        <a class="btn btn-light" href="https://demo.liyingtong.com" target="_blank" rel="noopener" data-zh="访问在线演示 demo.liyingtong.com" data-en="Visit live demo · demo.liyingtong.com">访问在线演示 demo.liyingtong.com</a>
+      </div>
+
+      <div class="product-visual" aria-hidden="true">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <em>demo.liyingtong.com</em>
+          </div>
+          <div class="browser-body">
+            <svg class="mock-map" viewBox="0 0 520 340" preserveAspectRatio="xMidYMid slice">
+              <rect width="520" height="340" fill="#F7FAFC"/>
+              <g fill="none" stroke="#DCE7F0" stroke-width="1">
+                <path d="M-20 80 C 120 40 260 60 380 30 L 540 20"/>
+                <path d="M-20 140 C 140 100 300 130 540 90"/>
+                <path d="M-20 220 C 160 180 340 210 540 170"/>
+                <path d="M-20 300 C 180 260 360 290 540 250"/>
+              </g>
+              <g fill="none" stroke="#9FB8CC" stroke-width="1.6" stroke-dasharray="5 4">
+                <path d="M96 262 C 150 230 190 210 236 196"/>
+                <path d="M330 250 C 300 226 268 210 236 196"/>
+                <path d="M236 196 C 240 150 246 112 252 84"/>
+                <path d="M430 120 C 380 140 300 170 236 196"/>
+              </g>
+              <g fill="#1B6FC9" stroke="#FFFFFF" stroke-width="1.5">
+                <circle cx="96" cy="262" r="6"/>
+                <circle cx="330" cy="250" r="6"/>
+                <circle cx="430" cy="120" r="6"/>
+                <circle cx="150" cy="290" r="4.5"/>
+                <circle cx="285" cy="120" r="4.5"/>
+                <circle cx="380" cy="60" r="4.5"/>
+                <circle cx="200" cy="60" r="4.5"/>
+              </g>
+              <g>
+                <rect x="212" y="72" width="80" height="26" rx="5" fill="#0F2A44"/>
+                <text x="252" y="89" font-size="10.5" fill="#FFFFFF" text-anchor="middle" font-family="Arial, sans-serif">Power Plant</text>
+              </g>
+              <g>
+                <rect x="200" y="182" width="72" height="26" rx="5" fill="#16405F"/>
+                <text x="236" y="199" font-size="10.5" fill="#FFFFFF" text-anchor="middle" font-family="Arial, sans-serif">Train-1</text>
+              </g>
+              <g>
+                <rect x="258" y="228" width="72" height="26" rx="5" fill="#16405F"/>
+                <text x="294" y="245" font-size="10.5" fill="#FFFFFF" text-anchor="middle" font-family="Arial, sans-serif">Train-2</text>
+              </g>
+              <g>
+                <circle cx="452" cy="262" r="13" fill="#3E8EC4"/>
+                <circle cx="480" cy="240" r="10" fill="#7FB3D9"/>
+              </g>
+            </svg>
+            <div class="mock-layers">
+              <span class="ml active" style="--c:#1B6FC9"><i></i><span data-zh="设备数据完整性" data-en="Equipment data completeness">设备数据完整性</span></span>
+              <span class="ml" style="--c:#3E8EC4"><i></i><span data-zh="BOM 数据完整性" data-en="BOM completeness">BOM 数据完整性</span></span>
+              <span class="ml" style="--c:#7FB3D9"><i></i><span data-zh="IoT 连接完整性" data-en="IoT connectivity">IoT 连接完整性</span></span>
+              <span class="ml" style="--c:#B9D3E8"><i></i><span data-zh="当日 WO 完成记录" data-en="Daily WO completion">当日 WO 完成记录</span></span>
+            </div>
+            <div class="mock-callout">
+              Train-1 · <span data-zh="产量影响" data-en="Production impact">产量影响</span> −18%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= Footer / Contact ======================= -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#home" aria-label="LiyingTong">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="#FFFFFF" fill-opacity="0.08"/>
+            <path d="M16 6 L9 26 M16 6 L23 26 M11.2 19 L20.8 19 M9.8 23 L22.2 23 M16 6 L16 26" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="16" cy="14.4" r="1.8" fill="#7FB3D9"/>
+          </svg>
+          <span class="brand-text">
+            <strong data-zh="利盈通" data-en="LiyingTong">利盈通</strong>
+            <em>LIYINGTONG</em>
+          </span>
+        </a>
+        <p data-zh="上海合平信息咨询有限公司旗下品牌，专注石油行业业务与技术咨询服务，服务国际油田运营现场。" data-en="A brand of Shanghai Heping Information Consulting Co., Ltd. — business and technology consulting for the oil &amp; gas industry, serving international oilfield operations.">上海合平信息咨询有限公司旗下品牌，专注石油行业业务与技术咨询服务，服务国际油田运营现场。</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3 data-zh="联系我们" data-en="Contact us">联系我们</h3>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-zh="上海市 · 详细地址待补充" data-en="Shanghai, China · detailed address to be added">上海市 · 详细地址待补充</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+86 000-0000-0000</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:contact@liyingtong.com">contact@liyingtong.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3 data-zh="快速导航" data-en="Quick links">快速导航</h3>
+        <a href="#home" data-zh="首页" data-en="Home">首页</a>
+        <a href="#cases" data-zh="我们的案例" data-en="Our Cases">我们的案例</a>
+        <a href="#product" data-zh="产品介绍" data-en="Product">产品介绍</a>
+        <a href="https://demo.liyingtong.com" target="_blank" rel="noopener" data-zh="在线演示平台" data-en="Live demo platform">在线演示平台</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-zh="© <span id='year'>2026</span> 上海合平信息咨询有限公司 · 利盈通 LIYINGTONG" data-en="© <span id='year'>2026</span> Shanghai Heping Information Consulting Co., Ltd. · LiyingTong">© <span id="year">2026</span> 上海合平信息咨询有限公司 · 利盈通 LIYINGTONG</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
